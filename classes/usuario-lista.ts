@@ -25,7 +25,7 @@ export class UsuarioLista {
 
 	// Devuelve todos los usuarios conectados.
 	public getLista (): Usuario[] {
-		return this.lista;
+		return this.lista.filter(Usuario => Usuario.nombre !== 'sin-nombre');
 	}
 
 	// Devuelve un usuarios.
